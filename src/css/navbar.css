@@ -1,0 +1,171 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(29, 32, 34, 0.7);
+    font-size: 20px;
+}
+
+#center {
+    margin: auto;
+    margin-top: -70px;
+    font-size: 23px;
+}
+
+#center svg {
+    width: 23px;
+    color: white;
+}
+
+#center a {
+    color: white;
+}
+
+#center a:hover{
+    text-decoration: none;
+}
+
+#center ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#center li {
+    left: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: fit-content;
+}
+
+#center li::after {
+    content: '';
+    width: 0rem;
+    height: 0.17rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.0rem;
+    margin: 0.0rem auto 0 auto;
+    transition: all 0.2s ease-in-out;
+}
+
+#center li:hover::after {
+    width: 3rem;
+}
+
+#right {
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
+    font-size: 23px;
+}
+
+#right li {
+    display: inline;
+}
+
+#right a {
+    text-decoration: none;
+}
+
+#right i {
+    color: rgb(255, 255, 255);
+}
+
+#right i:hover {
+    color: #b9b9b9;
+}
+
+#left img {
+    width: 70px;
+    margin-top: 15px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+#left img:hover {
+    transform: scale(1.1);
+}
+
+#left img:active {
+    transform: scale(1);
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+}
+
+@media (max-width: 1000px) {
+    #navbar {
+        display: none;
+    }
+
+    header {
+        height: 50px;
+        position: fixed;
+        top: 0;
+    }
+
+    .sidebar {
+        display: block;
+        width: 0px;
+        height: 100%;
+        position: fixed;
+        transition: 0.2s;
+        margin-top: 7px;
+        z-index: 999;
+    }
+
+    .sidebar button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-left: 12px;
+        margin-top: 4px;
+    }
+
+    .sidebar button:focus {
+        border: none;
+        outline: none;
+    }
+
+    .sidebar a {
+        color: white;
+    }
+
+    .sidebar i {
+        color: white;
+        font-size: 25px;
+    }
+
+    #side-links {
+        transition: 0.2s;
+        margin-left: -150px;
+        margin-top: 8px;
+        position: absolute;
+        height: 100%;
+        width: 150px;
+        text-align: center;
+        background-color: rgb(29, 32, 34, 0.7);
+    }
+
+    #side-a {
+        padding-top: 10px;
+    }
+    
+    #side-a a {
+        font-size: 15px;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #side-a i {
+        vertical-align: middle;
+        padding-right: 4px;
+    }
+
+    #side-a svg {
+        margin-top: -5px;
+    }
+}

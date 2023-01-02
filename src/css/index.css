@@ -1,0 +1,64 @@
+main {
+    margin-top: 30px;
+}
+
+#nts {
+    text-align: center;
+}
+
+#nts img {
+    width: 200px;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box-margin {
+    margin-top: 50px;
+}
+
+#slideshow-container{
+    padding-top: 50px;
+}
+
+.mySlides{
+    display: block;
+    overflow-x: hidden;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    max-width: 1205px;
+    min-width: 305px;
+}
+
+.mySlides.fade{
+    opacity: 100%;
+}
+
+.mySlides img{
+    border-radius: 10px;
+    width: 600px;
+}
+
+footer {
+    margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 35px;
+    }
+
+    .text-box {
+        width: 300px;
+    }
+
+    .mySlides img {
+        width: 300px;
+    }
+}

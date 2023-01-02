@@ -1,0 +1,67 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: rgb(29, 32, 34, 0.7);
+    max-width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Card-Wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.Card{
+    background-color: rgba(29, 32, 34, 0.918);
+    color: white;
+    max-width: 40%;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.Card:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.Card img{
+    max-width: 50%;
+    border-radius: 100%;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(222, 255, 0);
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding-top: 60px;
+    }
+
+    .Card {
+        min-width: 140px;
+        max-width: 140px;
+        display: inline-block;
+    }
+
+    h1{
+        padding: 8px;
+        max-width: 60%;
+        font-size: 35px;
+    }
+}
